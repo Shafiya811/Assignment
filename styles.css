@@ -1,0 +1,597 @@
+* {
+    /* margin & padding -> 0, to remove defalut margin &padding */
+    margin: 0;
+    padding: 0;
+    background-color: #131212;
+  }
+  
+  body {
+    background-color: #e2e2e0;
+    font-family: "Merriweather", serif;
+  }
+  .navbar {
+    padding: 0rem;
+  }
+  .container-fluid {
+    display: flex;
+    padding-left: 0.6rem;
+    padding-right: 0.6rem;
+  }
+  
+  .left-header {
+    display: flex;
+    width: 20%;
+    max-width: 150px;
+    height: auto;
+    padding-left: 10px;
+    margin: 0 auto;
+  }
+  
+  .right-header {
+    display: flex;
+    align-items: center;
+    margin: 0px;
+    padding-right: 0px;
+  }
+  
+  .navbar-line {
+    width: 1px;
+    background-color: #000; /* Black line color */
+    margin: 0 10px;
+  }
+  .home-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+  }
+  .default-container {
+    max-width: 126.4rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    margin: 0 auto;
+  }
+  
+  .home-top {
+    position: relative;
+    max-width: 53rem;
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+    margin-top: 2rem;
+  }
+  .home-title {
+    color: #ffffff;
+    font-weight: 300;
+    font-size: 2rem;
+    line-height: 2rem;
+  }
+  .home-description {
+    color: #ffffff;
+    font-weight: 200;
+    font-size: 1rem;
+    color: #e2e2e0;
+  }
+  
+  .sub-container {
+    padding: 1rem;
+    text-align: left;
+  }
+  
+  .default-btn {
+    background-color: #3eb489;
+    color: #fff;
+    text-align: left;
+    font-weight: 700;
+    font: bold;
+  }
+  /* home top end */
+  .latest-info-block {
+    box-shadow: 0 0.5rem 2.2rem rgba(0, 0, 0, 0.12156862745098039);
+    border: 1px solid hsla(0, 0%, 100%, 0.0784313725490196);
+    border-radius: 4px;
+    max-width: 38rem;
+    width: 100%;
+    height: 7rem;
+    display: flex;
+    align-items: center;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    margin: 1rem 1rem;
+    backdrop-filter: blur(4px);
+  }
+  .latest-info__icon {
+    margin: 0 1.5rem;
+  }
+  .latest-info__title {
+    color: #cecece;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    letter-spacing: 0;
+  }
+  .latest-info__value {
+    font-size: 2rem;
+    color: #fff;
+  }
+  /* benifit section */
+  .benefits {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    padding-top: 5.6rem;
+    padding-bottom: 5.6rem;
+  }
+  .benefits-section {
+    background: #191919;
+    border-top: 1px solid #4d4d4e;
+  }
+  .benefit {
+    padding: 2.4rem 2.4rem;
+  }
+  .benefit-icon {
+    display: flex;
+    align-items: center;
+    padding: 0 0 1.5rem;
+    font-size: 1.85rem;
+  }
+  .benefit-title {
+    font-size: 2.2rem;
+    line-height: 2.8rem;
+    font-weight: 400;
+    margin-left: 1.5rem;
+    color: #ffff;
+  }
+  .benefit-description {
+    font-size: 1.5rem;
+    line-height: 2.3rem;
+    max-width: 29rem;
+    color: #cecece;
+    letter-spacing: 0;
+    font-weight: 100;
+  }
+  /* Tokens */
+  .token-card-section {
+    padding-top: 1rem;
+    padding-bottom: 6rem;
+    background: #191919;
+    margin-bottom: -4.65rem;
+  }
+  .token-card-info {
+    max-width: 38.75rem;
+  }
+  .token-card-info__title {
+    font-size: 3.8rem;
+    line-height: 4.8rem;
+    font-weight: 700;
+    margin-bottom: 3.1rem;
+    letter-spacing: 0;
+    color: #fff;
+  }
+  .token-card-options {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-row-gap: 1.5rem;
+  }
+  .token-card-option {
+    position: relative;
+    padding: 2.325rem;
+    border-radius: 1.3rem;
+    max-width: 59.2rem;
+    background: #151515;
+    box-shadow: 0 0.5rem 1.3rem rgba(0, 0, 0, 0.5215686274509804);
+    border: 1px solid #4d4d4e;
+    border-radius: 8px;
+  }
+  .token-card-option-icon {
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    font-size: 2.325rem;
+    line-height: 3.1rem;
+    letter-spacing: 0;
+    color: #fff;
+    height: 3.1rem;
+  }
+  .token-card-option-icon img {
+    margin-right: 0.8rem;
+  }
+  .token-card-option-title {
+    font-size: 1.8rem;
+    line-height: 2.3rem;
+    letter-spacing: 0;
+    color: #fff;
+    margin-top: 2.325rem;
+  }
+  .token-card-option-apr {
+    font-size: 1.5rem;
+    line-height: 2.3rem;
+    letter-spacing: 0;
+    color: #cecece;
+    margin-top: 1.9375rem;
+  }
+  .token-card-option-action {
+    margin-top: 2rem;
+    display: flex;
+    direction: column;
+  }
+  .token-card-option-action > .buy {
+    display: flex;
+    flex-direction: column;
+  }
+  .token-card-option-action > .read-more {
+    display: inline-block;
+  }
+  .token-card-option-action a {
+    text-align: center;
+  }
+  /* footer */
+  .footer {
+    height: 100px; /* Adjust the height as needed */
+  }
+  
+  .footer-wrapper {
+    text-align: center;
+    padding: 2rem 0; /* Adjust the padding as needed */
+    background: #151515;
+    width: 100vw;
+    position: absolute;
+    transform: translateX(-50%);
+    left: 50%;
+    border-top: 1px solid #4d4d4e;
+  }
+  
+  .footer-logo {
+    margin-bottom: 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .footer-social-link-block {
+    display: flex;
+    justify-content: center;
+    flex-direction: row; /* Add this line */
+    margin: 0 auto 1rem;
+  }
+  
+  .footer-social-link-block a {
+    text-decoration: none;
+    color: #888; /* Adjust the color to your preference */
+    font-size: 24px; /* Adjust the font size as needed */
+    margin: 0 10px;
+  }
+  
+  .footer-links {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .footer-link {
+    color: #e6e6ea;
+    font-size: 1.5rem;
+    line-height: 1.85rem;
+    font-weight: 400;
+    text-decoration: none;
+    cursor: pointer;
+    padding: 1rem;
+  }
+  
+  /* Hide the elements for screens smaller than 768px */
+  @media (max-width: 767px) {
+    .explore-navbar {
+      display: none;
+    }
+    .container-fluid {
+      display: flex;
+    }
+    .left-header {
+      padding: 0px;
+      margin: 0px;
+      flex: 1;
+    }
+    .navbar-brand {
+      margin: 0px;
+    }
+    .right-header {
+      width: 10%; /* Adjust the width as needed */
+      display: flex;
+      justify-content: flex-end;
+    }
+    .right-items {
+      display: flex;
+      align-items: center;
+      margin: 0px;
+      padding: 0.2rem;
+    }
+  }
+  @media (min-width: 768px) {
+    .container-fluid {
+      display: flex;
+    }
+  
+    .left-header {
+      width: 20%;
+      /* padding-right: 0px; */
+    }
+  
+    .right-header {
+      width: 15%;
+      display: flex;
+      justify-content: flex-end;
+    }
+    .right-items {
+      padding: 5px;
+    }
+    .explore-navbar {
+      display: flex;
+      margin-left: 0px;
+      padding-left: 0px;
+      width: 60%;
+    }
+  
+    .nav-item {
+      margin: 5px;
+    }
+  
+    .nav-link {
+      display: block;
+      color: #838383a6;
+      font-weight: 500;
+    }
+    .home-section {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      position: relative;
+    }
+    .default-container {
+      max-width: 126.4rem;
+      padding-left: 1.5rem;
+      padding-right: 1.5rem;
+      margin: 0 auto;
+    }
+  
+    .home-top {
+      position: relative;
+      max-width: 53rem;
+      display: flex;
+      flex-direction: column;
+      padding-left: 20px;
+    }
+    .home-title {
+      color: #ffffff;
+      font-weight: 700;
+      font-size: 4rem;
+      line-height: 4rem;
+    }
+    .home-description {
+      color: #ffffff;
+      font-weight: 400;
+      font-size: 2rem;
+      color: #e2e2e0;
+    }
+  
+    .sub-container {
+      padding: 2rem;
+      text-align: left;
+    }
+    .footer-links {
+      padding-bottom: 2rem;
+      display: flex;
+      justify-content: center;
+    }
+  }
+  @media (min-width: 1024px) {
+    .container-fluid {
+      display: flex;
+    }
+  
+    .left-header {
+      width: 20%;
+    }
+    .explore-navbar {
+      width: 60%;
+    }
+    .right-header {
+      width: 20%;
+      display: flex;
+      justify-content: flex-end;
+    }
+    .right-items {
+      padding: 10px;
+      margin: 5px;
+    }
+    .right-items .btn-label::after {
+      content: " Wallet";
+    }
+    .explore-navbar {
+      display: center;
+    }
+    .navbar-nav {
+      /* text-align: center; Center-align text */
+      /* padding: 0; Remove default padding */
+    }
+  
+    .nav-item {
+      margin: 0 10px; /* 3px gap between each nav item */
+    }
+  
+    .nav-link {
+      display: block;
+      color: #838383;
+      font-size: 1.5rem;
+      font-weight: 500;
+    }
+    .latest-info {
+      display: flex;
+      flex-direction: row;
+    }
+    .latest-info-block {
+      box-shadow: 0 0.5rem 2.2rem rgba(0, 0, 0, 0.12156862745098039);
+      border: 2px solid hsla(0, 0%, 100%, 0.0784313725490196);
+      border-radius: 4px;
+      max-width: 38rem;
+      width: 100%;
+      display: flex;
+      padding-top: 2.5rem;
+      padding-bottom: 2.5rem;
+      margin: 1rem 1rem;
+      backdrop-filter: blur(4px);
+    }
+  
+    .benefits-section {
+      background: #191919;
+      border-top: 1px solid #4d4d4e;
+      display: flex;
+      flex-direction: row;
+      padding: 32px;
+    }
+  
+    .benefit-title {
+      font-size: 2rem;
+      line-height: 2rem;
+      font-weight: 400;
+      margin-left: 1.5rem;
+      color: #ffff;
+    }
+    .benefit-description {
+      font-size: 1.5rem;
+      line-height: 2rem;
+      color: #cecece;
+      letter-spacing: 0;
+      font-weight: 200;
+    }
+    .token-card-options {
+      margin-top: 2rem;
+      display: flex;
+      flex-direction: row;
+    }
+    .token-card-option {
+      margin: 1rem;
+    }
+    .token-card-option-action {
+      display: flex;
+      flex-direction: row;
+      position: relative;
+    }
+    .token-card-option-action > .buy {
+      width: 20%;
+    }
+    .token-card-option-action > .read-more {
+      width: 20%;
+    }
+    .token-card-option-action a {
+      text-align: center;
+    }
+    .footer-links {
+      padding-bottom: 4rem;
+      display: flex;
+      justify-content: center;
+    }
+  
+    .DashboardV2-cards {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 1.5rem;
+      margin-top: 0.8rem;
+    }
+  }
+  /* for dashboard */
+  .page-layout {
+    min-height: calc(100vh - 62px);
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 24.65rem;
+    padding-top: 4.65rem;
+  }
+  section-title-block {
+    margin-bottom: 1.5rem !important;
+  }
+  .section-title-icon {
+    display: flex;
+    align-items: center;
+  }
+  section-title-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+  .Page-title {
+    font-size: 3.4rem;
+    font-weight: 500;
+    margin-bottom: 0.8rem;
+    font-weight: 700;
+    color: #fff;
+  }
+  .Page-description {
+    color: #b7b7bd;
+    line-height: 2.15rem;
+    font-size: 1.5rem;
+  }
+  .DashboardV2 {
+    padding-top: 4.65rem;
+  }
+  .DashboardV2-cards {
+    grid-template-columns: 1fr;
+  }
+  .App-card {
+    padding: 1.5rem 1.5rem 1.86rem;
+    border: 1px solid #4d4d4e;
+    border-radius: 0.4rem;
+    font-size: 1.5rem;
+  }
+  .App-card-title {
+    font-size: 1.6rem;
+    line-height: 2.1rem;
+    font-weight: 400;
+    letter-spacing: 0;
+    color: #fff;
+    margin-bottom: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .App-card-divider {
+    height: 1px;
+    background: #4d4d4e;
+    margin: 1.05rem -1.5rem;
+  }
+  .App-card-content {
+    display: grid;
+    grid-row-gap: 0.8rem;
+  }
+  .App-card-row {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    grid-column-gap: 1.5rem;
+    padding: unset;
+  }
+  .label,
+  .label a {
+    color: hsla(0, 0%, 100%, 0.7);
+  }
+  .App-card-row > div:last-child {
+    text-align: right;
+  }
+  .Tooltip {
+    position: relative;
+  }
+  .Tooltip-handle {
+    cursor: help;
+    position: relative;
+    display: inline-flex;
+    text-decoration: underline;
+    -webkit-text-decoration-style: dashed;
+    text-decoration-style: dashed;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 2px;
+    color: #fff;
+    -webkit-text-decoration-color: #fff;
+    text-decoration-color: #fff;
+  }
+  .Tab-title-section {
+    padding: 3.1rem 0 0;
+    margin-bottom: 2.4rem;
+  }
+  
